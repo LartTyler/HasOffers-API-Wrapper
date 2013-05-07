@@ -27,8 +27,15 @@ After we prepare our query, we need to add some parameters (for most method call
 
 
 The `addParameter` function accepts 2 different styles of arguments:
-1. A key as parameter 1, and a value as parameter 2
-2. A key as parameter 1, and a variable number of parameters that will become the array value of parameter 1 (i.e., `$api->addParameter('id', 10, 11, 12, 13)` would be the same as `$api->addParameter('id', array(10, 11, 12, 13))`)
+
+> 1. A key as parameter 1, and a value as parameter 2
+> 2. A key as parameter 1, and a variable number of parameters that will become the array value of parameter 1. For example:
+
+	$api->addParameter('id', 10, 11, 12, 13)
+
+would be the same as running:
+
+	$api->addParameter('id', array(10, 11, 12, 13))
 
 After all of your paramters have been added, all that's left to do is execute the query:
 
