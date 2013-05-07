@@ -28,8 +28,10 @@ After we prepare our query, we need to add some parameters (for most method call
 
 The `addParameter` function accepts 2 different styles of arguments:
 
-> 1. A key as parameter 1, and a value as parameter 2
-> 2. A key as parameter 1, and a variable number of parameters that will become the array value of parameter 1. For example:
+* A key as parameter 1, and a value as parameter 2
+* A key as parameter 1, and a variable number of parameters that will become the array value of parameter 1
+
+For example, in the case of the second argument format:
 
 	$api->addParameter('id', 10, 11, 12, 13)
 
